@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\ssndr\Documents\JS Practice\myownproject\style.css">
+
+</head>
+<body>
+	<div class="navigation">
+		<ul>
+			<li><a>Home</a></li>
+			<li><a>About</a>
+				<ul>
+					<li><a>Our team</a></li>
+					<li><a>Camp site</a></li>
+					<li><a>Mission</a></li>
+				</ul>
+			</li>
+
+			<li><a>Things to do</a></li>
+			<li><a>Contact</a>
+				<ul>
+					<li><a>Email-us</a></li>
+					<li><a>Call-us</a></li>
+				</ul>
+			</li>
+			<li><a>News</a></li>
+
+		</ul>
+	</div>
+
+	<div class="header">
+	<h1>Welcome to Gaming info</h1>
+	<h5>-Everything you need to game</h6>
+	</div>
+	
+	<div class="category">
+		<h3>Choose your style:</h3>
+			<select id="dropdown" onchange="showInfo()">
+				<option selected value="--">--</option>
+				<option value="RPG">RPG</option>
+				<option value="FPS">FPS</option>
+				<option value="Racing">Racing</option>
+				<option value="Free to play">Free to play</option>
+
+			</select>
+	
+	
+	<div id="RPG" class="gameCategory">
+		<h2>Role playing games</h2>
+	</div>
+	<div id="FPS" class="gameCategory">
+		<h2>Fist person shooting</h2>
+	</div>
+	<div id="Racing" class="gameCategory">
+		<h2>Racing</h2>
+	</div>
+	<div id="Free to play" class="gameCategory">
+		<h2>Free to play</h2>
+	</div>
+	</div>
+<script src="C:\Users\ssndr\Documents\JS Practice\myownproject\myscript.js"></script>
+</body>
+</html>
