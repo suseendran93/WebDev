@@ -1,13 +1,11 @@
 html,body{height:100%;}
-
-
 body{
-			background: url("bg.jpg") no-repeat;			
+			background-image: url("bg.jpg");
+			background-repeat:no-repeat;
 			background-size: cover;
 			color: #c9cdd3;
 			font-family: Arial;
 			margin:0px;
-			background-attachment: fixed;
 		}
 		h1{
 			text-align: center;
@@ -16,62 +14,33 @@ body{
 		h5{
 			text-align: center;
 		}
-		
 
-		button{
-			float:right;
-			background:transparent;
-			border: 1px solid #ccc;
-			color: #c9cdd3;
-			font-family: Arial;
-			font-size: 20px;
-			text-decoration: underline;
-			margin:2px;
-
-
-		}
-		
-		button:hover{
-			color: green;
-
-		}
-		.navigation{
-			position: relative;
-			margin-top: 0px;
-		}
 		.category {
-			position: relative;
 			text-align: center;
-			margin-top: 50px;
+			padding-top: 50px;
 		}
 		.category select{
 			background:transparent;
 			border: 1px solid #ccc;
-			color: red;
 			
 			
 		}
 		.header{
 			position: relative;
-			margin-top: 50px;
-			
-		
+			margin-top: 150px;
 			
 		}
-
 		.navigation ul::before,.navigation ul::after{
 			content: "";
-            clear: both;
-            display: table;
+                        clear: both;
+                        display: table;
 		}
-				
 		ul{
 			margin: 0px;
 			padding: 0px;
 			list-style: none;
 		}
 		 li{
-
 			float: left;
 			width: 200px;
 			height: 40px;
@@ -83,7 +52,6 @@ body{
 		}
 
 		ul li a{
-
 			text-decoration: none;
 			color: white;
 			display: block;
@@ -91,24 +59,4 @@ body{
 
 		ul li a:hover{
 			background-color:green;
-		}
-
-		ul li ul li{
-			display: none;
-		}
-
-		ul li:hover ul li{
-			display: block;
-
-		}
-
-		p{
-			display: inline-block;
-			text-align: left;
-			width: 50%;
-			margin-left: auto;
-			margin-right: auto;
-			color: yellow;
-			font-weight: bold;
-			
 		}
