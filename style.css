@@ -1,11 +1,22 @@
 html,body{height:100%;}
+
+
+html,body{height:100%;}
 body{
+<<<<<<< HEAD
+			background: url("bg.jpg") no-repeat;			
+=======
 			background-image: url("bg.jpg");
 			background-repeat:no-repeat;
+>>>>>>> 10185b63ce802c0b94054aaf24980b80a94b12f2
 			background-size: cover;
 			color: #c9cdd3;
 			font-family: Arial;
 			margin:0px;
+<<<<<<< HEAD
+			background-attachment: fixed;
+=======
+>>>>>>> 10185b63ce802c0b94054aaf24980b80a94b12f2
 		}
 		h1{
 			text-align: center;
@@ -14,33 +25,74 @@ body{
 		h5{
 			text-align: center;
 		}
+		
 
+		button{
+			float:right;
+			background:transparent;
+			border: 1px solid #ccc;
+			color: #c9cdd3;
+			font-family: Arial;
+			font-size: 20px;
+			text-decoration: underline;
+			margin:2px;
+
+
+		}
+		
+		button:hover{
+			color: green;
+
+		}
+		.navigation{
+			position: relative;
+			margin-top: 0px;
+		}
 		.category {
+			position: relative;
 			text-align: center;
-			padding-top: 50px;
+			margin-top: 50px;
 		}
 		.category select{
 			background:transparent;
 			border: 1px solid #ccc;
+			color: red;
 			
 			
 		}
 		.header{
 			position: relative;
+<<<<<<< HEAD
+			margin-top: 50px;
+=======
 			margin-top: 150px;
+>>>>>>> 10185b63ce802c0b94054aaf24980b80a94b12f2
+			
+		
 			
 		}
+
+		.navigation ul::before,.navigation ul::after{
+			content: "";
+            clear: both;
+            display: table;
+		}
+<<<<<<< HEAD
+				
+=======
 		.navigation ul::before,.navigation ul::after{
 			content: "";
                         clear: both;
                         display: table;
 		}
+>>>>>>> 10185b63ce802c0b94054aaf24980b80a94b12f2
 		ul{
 			margin: 0px;
 			padding: 0px;
 			list-style: none;
 		}
 		 li{
+
 			float: left;
 			width: 200px;
 			height: 40px;
@@ -52,6 +104,7 @@ body{
 		}
 
 		ul li a{
+
 			text-decoration: none;
 			color: white;
 			display: block;
@@ -60,3 +113,26 @@ body{
 		ul li a:hover{
 			background-color:green;
 		}
+<<<<<<< HEAD
+
+		ul li ul li{
+			display: none;
+		}
+
+		ul li:hover ul li{
+			display: block;
+
+		}
+
+		p{
+			display: inline-block;
+			text-align: left;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+			color: yellow;
+			font-weight: bold;
+			
+		}
+=======
+>>>>>>> 10185b63ce802c0b94054aaf24980b80a94b12f2
