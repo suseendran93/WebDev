@@ -20,3 +20,4 @@
 				document.getElementById("Racing").style.display='none';
 				document.getElementById("Free to play").style.display='none';
 					}
+
