@@ -7,49 +7,58 @@
 
 </head>
 <body>
+	<nav>
+		<div class="navigation">
+			
+			<ul>
+				<li><a>Home</a></li>
+				<li><a>About</a>
+					<ul>
+						<li><a>Our team</a></li>
+						<li><a>Camp site</a></li>
+						<li><a>Mission</a></li>
+					</ul>
+				</li>
 
-	
-	<div class="navigation">
-		<button id="signunp">Sign up</button>
-		<button id="signin">Sign in</button>
-		<ul>
-			<li><a>Home</a></li>
-			<li><a>About</a>
-				<ul>
-					<li><a>Our team</a></li>
-					<li><a>Camp site</a></li>
-					<li><a>Mission</a></li>
-				</ul>
-			</li>
+				<li><a>Things to do</a></li>
+				<li><a>Contact</a>
+					<ul>
+						<li><a href="#" target="_blank">Email-us</a></li>
+						<li><a>Map</a></li>
+					</ul>
+				</li>
+				<li><a>News</a></li>
 
-			<li><a>Things to do</a></li>
-			<li><a>Contact</a>
-				<ul>
-					<li><a>Email-us</a></li>
-					<li><a>Call-us</a></li>
-				</ul>
-			</li>
-			<li><a>News</a></li>
-
-		</ul>
-	</div>
+			</ul>
+		</div>
+		
+		<div class="cta">
+			<div class="btn-container">
+				<button id="signup"><a href="#" target="_blank">Sign up</a></button>
+				<button id="signin"><a href="#" target="_blank">Sign in</a></button>
+			</div>
+		</div>
+	</nav>
 
 	<div class="header">
-	<h1>Welcome to Gaming info</h1>
-	<h5>-Everything you need to game</h5>
+		<h1>Welcome to Gaming info</h1>
+		<h5>-Everything you need to game</h5>
 	</div>
-	
+	<div class="searchbar">
+		<input type="text" name="searchbar" placeholder="Search...">
+
+	</div>
 	<div class="category">
 		<h3>Choose your style:</h3>
-			<select id="dropdown" onchange="showInfo()">
-				<option selected value="--">--</option>
-				<option value="RPG">RPG</option>
-				<option value="FPS">FPS</option>
-				<option value="Racing">Racing</option>
-				<option value="Free to play">Free to play</option>
-			</select>
-	
-	
+		<select id="dropdown" onchange="showInfo()">
+			<option selected value="--">--</option>
+			<option value="RPG">RPG</option>
+			<option value="FPS">FPS</option>
+			<option value="Racing">Racing</option>
+			<option value="Free to play">Free to play</option>
+		</select>
+
+	</div>
 	<div id="RPG" class="gameCategory">
 		<h2>Role playing games</h2>
 		<p>A role-playing game (sometimes spelled roleplaying game; abbreviated RPG) is a game in which players assume the roles of characters in a fictional setting. Players take responsibility for acting out these roles within a narrative, either through literal acting, or through a process of structured decision-making regarding character development.Actions taken within many games succeed or fail according to a formal system of rules and guidelines.
@@ -68,7 +77,19 @@
 	<div id="Free to play" class="gameCategory">
 		<h2>Free to play</h2>
 	</div>
+	
+	<div class="custom-dropdown">
+		<button class="drop-btn" onclick="showGames()">--</button>
+		<span>
+			<ul class="drop">
+				<li><a>RPG</a></li>
+				<li><a>FPS</a></li>
+				<li><a>Racing</a></li>
+				<li><a>Free to play</a></li>
+			</ul>
+		</span>
+		
 	</div>
-<script src="myscript.js"></script>
+	<script src="myscript.js"></script>
 </body>
 </html>
