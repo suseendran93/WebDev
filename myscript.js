@@ -1,5 +1,11 @@
-	window.onload=hideInfo();
-	
+	window.onload=(function(){
+		hideInfo();
+		var games=document.querySelectorAll('.drop li');
+		for(var i=0;i<games.length;i++){
+		var text=games[i].innerText;	
+		games[i].addEventListener("click",showInfo2);
+	}
+	})();
 	function showInfo(){
 		hideInfo();
 		var val=document.getElementById("dropdown").value;
@@ -22,10 +28,9 @@
 	}
 //Global variable
 	var flag=false;
-	var games=document.querySelectorAll('.drop li');
 //
 	function showGames(){	
-	
+		var games=document.querySelectorAll('.drop li');
 		if(flag==false){
 			for (var i = 0; i < games.length; i++) {
 				games[i].style.display='block';
@@ -40,17 +45,10 @@
 		}
 	}
 
-
-	for(var i=0;i<games.length;i++){
-		var text=games[i].innerText;
-		
-		games[i].addEventListener("click",showInfo2(text));
-
-}
-		function showInfo2(text){
+		function showInfo2(){
 			hideInfo();
-
-
+			var text = this.children[0].innerText;
+			
 			if(text=="RPG"){
 				document.getElementById("RPG").style.display='block';
 				
@@ -68,4 +66,3 @@
 
 			}
 		}
-	
