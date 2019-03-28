@@ -37,6 +37,10 @@ h5{
 	color: green;
 }
 
+.btn-container a:link{
+	color: green;
+}
+
 .btn-container a:hover{
 	font-size: 25px;
 }
@@ -93,7 +97,7 @@ button:hover{
 
 }
 
-.header{
+.header,.details_header{
 	position: relative;
 	margin-top: 50px;
 	
@@ -144,8 +148,6 @@ button:hover{
 
 .navigation ul li:hover ul li{
 	display: block;
-	
-
 }
 
 .navigation ul li ul li a:hover{
@@ -166,9 +168,7 @@ p{
 	display: none;
 }
 
-.custom-dropdown ul li:hover{
-	cursor: pointer;
-}
+
 
 
 
@@ -187,3 +187,11 @@ p{
 
 }
 
+.form{
+	
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display:block;
+
+}
