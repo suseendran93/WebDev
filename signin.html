@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sign up page</title>
+	<title>Sign in Page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="cancel">
+	<div class="cancel">
 	<button class="close" onclick="closeCurrentTab()">Cancel</button>
 
-</div>
-		
+	</div>
 <div class="details_header">
-	<h1>Please fill your details</h1>
+	<h1>Please enter your credentials</h1>
 </div>
-<div class="form" id="signupform">
-<form name="signupform" method="get" action="http://localhost:8081/ServletPractice/SignUpServlet">
+<div class="form" id="signinform">
+	<form name="signinform" method="get" action="#">
 	
 	<h3>Username</h3><br/>
-	<input type="email" name="username" required><br/>
+	<input type="text" name="username" required><br/>
 	<h3>Password</h3><br/>
 	<input type="password" name="password" required><br/>
-	<h3>Confirm password</h3><br/>
-	<input type="password" name="confirm_password" required><br/><br/>
 	<input type="submit" name="submit">
 
 </form>
 </div>
 <script src="myscript.js"></script>
+
+
 </body>
 </html>

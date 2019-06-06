@@ -4,14 +4,15 @@
 <head>
 	<title>Homepage</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<nav>
 		<div class="navigation">
 			
 			<ul>
-				<li><a>Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a>About</a>
 					<ul>
 						<li><a>Our team</a></li>
@@ -34,8 +35,8 @@
 		
 		<div class="cta">
 			<div class="btn-container">
-				<button id="signup"><a href="signup.html" target="_blank">Sign up</a></button>
-				<button id="signin"><a href="#" target="_blank">Sign in</a></button>
+				<button id="signup"><a href="signup.html">Sign up</a></button>
+				<button id="signin"><a href="signin.html">Sign in</a></button>
 			</div>
 		</div>
 	</nav>
@@ -48,17 +49,19 @@
 		<input type="text" name="searchbar" placeholder="Search...">
 
 	</div>
-	<div class="category">
-		<h3>Choose your style:</h3>
-		<select id="dropdown" onchange="showInfo()">
-			<option selected value="--">--</option>
-			<option value="RPG">RPG</option>
-			<option value="FPS">FPS</option>
-			<option value="Racing">Racing</option>
-			<option value="Free to play">Free to play</option>
-		</select>
-
+	<div class="custom-dropdown">
+		<button class="drop-btn" onclick="showGames()">Category</button>
+		<span>
+			<ul class="drop">
+				<li><a>RPG</a></li>
+				<li><a>FPS</a></li>
+				<li><a>Racing</a></li>
+				<li><a>Free to play</a></li>
+			</ul>
+		</span>
+		
 	</div>
+
 	<div id="RPG" class="gameCategory">
 		<h2>Role playing games</h2>
 		<p>A role-playing game (sometimes spelled roleplaying game; abbreviated RPG) is a game in which players assume the roles of characters in a fictional setting. Players take responsibility for acting out these roles within a narrative, either through literal acting, or through a process of structured decision-making regarding character development.Actions taken within many games succeed or fail according to a formal system of rules and guidelines.
@@ -78,18 +81,7 @@
 		<h2>Free to play</h2>
 	</div>
 	
-	<div class="custom-dropdown">
-		<button class="drop-btn" onclick="showGames()">--</button>
-		<span>
-			<ul class="drop">
-				<li><a>RPG</a></li>
-				<li><a>FPS</a></li>
-				<li><a>Racing</a></li>
-				<li><a>Free to play</a></li>
-			</ul>
-		</span>
-		
-	</div>
+	
 	<script src="myscript.js"></script>
 </body>
 </html>

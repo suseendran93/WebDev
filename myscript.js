@@ -1,23 +1,11 @@
-	window.onload=(function(){
+	window.onload=(function load(){
 		hideInfo();
 		var games=document.querySelectorAll('.drop li');
 		for(var i=0;i<games.length;i++){
-		var text=games[i].innerText;	
-		games[i].addEventListener("click",showInfo2);
+		games[i].addEventListener("click",showInfo);
 	}
 	})();
-	function showInfo(){
-		hideInfo();
-		var val=document.getElementById("dropdown").value;
-		if(val == "RPG")
-			document.getElementById("RPG").style.display='block';
-		else if(val == "FPS")
-			document.getElementById("FPS").style.display='block';
-		else if(val == "Racing")
-			document.getElementById("Racing").style.display='block';
-		else
-			document.getElementById("Free to play").style.display='block';
-	}
+	
 
 	function hideInfo(){
 
@@ -45,24 +33,36 @@
 		}
 	}
 
-		function showInfo2(){
+		function showInfo(){
 			hideInfo();
 			var text = this.children[0].innerText;
 			
 			if(text=="RPG"){
 				document.getElementById("RPG").style.display='block';
+				showGames();
 				
 			}
 			else if(text=="FPS"){
 				document.getElementById("FPS").style.display='block';
+				showGames();
 
 			}
 			else if(text=="Racing"){
 				document.getElementById("Racing").style.display='block';
+				showGames();
 
 			}
 			else if(text=="Free to play"){
 				document.getElementById("Free to play").style.display='block';
+				showGames();
 
+			}
+		}
+
+		function closeCurrentTab(){
+
+			var con=confirm("Are you sure, you want to cancel signing up?");
+			if(con==true){
+				window.location.href="index.html";
 			}
 		}
