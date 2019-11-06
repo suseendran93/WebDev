@@ -26,7 +26,7 @@ outline: 0;
 
 .header{
 	position: relative;
-	margin-top: 150px;
+	margin-top: 75px;
 }
 .btn-container button {
 	background:transparent;
@@ -85,10 +85,19 @@ nav{
 
 }
 
-.gameCategory {
+div.gameCategory {
 	position: relative;
 	text-align: center;
 	margin-top: 50px;
+	margin-left: 350px;
+	margin-right: 350px;
+	margin-bottom: 50px;
+	border-style: solid;
+	border-color: black;
+	overflow: auto;
+
+	
+	
 
 }
 

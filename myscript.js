@@ -4,6 +4,7 @@
 		for(var i=0;i<games.length;i++){
 		games[i].addEventListener("click",showInfo);
 	}
+	
 	})();
 	
 
@@ -18,18 +19,24 @@
 	var flag=false;
 //
 	function showGames(){	
+		
 		var games=document.querySelectorAll('.drop li');
 		if(flag==false){
+			hideInfo();
 			for (var i = 0; i < games.length; i++) {
 				games[i].style.display='block';
 			}
 			flag=true;
 		}
 		else{
+			
 			for (var i = 0; i < games.length; i++) {
 				games[i].style.display='none';
+				
 			}
+			
 			flag=false;
+			
 		}
 	}
 
@@ -40,8 +47,9 @@
 			if(text=="RPG"){
 				document.getElementById("RPG").style.display='block';
 				showGames();
-				
+					
 			}
+			
 			else if(text=="FPS"){
 				document.getElementById("FPS").style.display='block';
 				showGames();
@@ -57,6 +65,7 @@
 				showGames();
 
 			}
+		
 		}
 
 		function closeCurrentTab(){
@@ -66,3 +75,5 @@
 				window.location.href="index.html";
 			}
 		}
+
+		
